@@ -1,149 +1,171 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dealership</title>
     <link rel="stylesheet" href="index.css" type="text/css" />
-    <link rel="icon" href="assets/logo.jpg" type="image/x-icon" />
-  </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="assets/logo.jpg" type="image/x-icon">
+</head>
 
-  <body style="flex-direction: column">
+<body style="flex-direction:column;">
+ 
     <div id="load">
-      <img src="assets/logo.jpg" alt="" />
-    </div>
-
-    <header>
-      <div class="nav-bar">
-        <img src="assets/logo.jpg" alt="" />
-        <nav>
-          <ul class="nav_bar">
-            <li><a href="#">CARS</a></li>
-            <li><a href="#">NEWS</a></li>
-            <li><a href="#">CONTACT US</a></li>
+    <img src="assets/logo.jpg" alt="" />
+  </div>    <header>
+  <div class="nav-bar">
+    <img src="assets/logo.jpg" alt="" />
+    <nav>
+      <ul>
+        <li class="dropdown">
+          <a href="#">CARS</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Hyper</a></li>
+            <li><a href="#">Super</a></li>
+            <li><a href="#">Classic</a></li>
+            <li><a href="#">Touring</a></li>
           </ul>
-        </nav>
-      </div>
-    </header>
-
+        </li>
+        <li><a href="#">RACE CARS</a></li>
+        <li><a href="#">NEWS</a></li>
+        <li><a href="#">CONTACT US</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
     <section class="slider-container">
-      <div class="slider-wrapper">
-        <div class="slider">
-          <img id="slide-1" src="assets/slide-1.jpg" alt="" />
-          <img id="slide-2" src="assets/slide-2.jpg" alt="" />
-          <img id="slide-3" src="assets/slide-3.jpg" alt="" />
-          <img id="slide-4" src="assets/slide-4.jpg" alt="" />
-        </div>
-        <div class="slider-nav">
-          <a href="#"></a>
-          <a href="#"></a>
-          <a href="#"></a>
-          <a href="#"></a>
-        </div>
-      </div>
-    </section>
-    <div class="card-container">
-      <div class="card">
-        <a href="" style="text-decoration: none">
-          <img src="assets/Ferrari LaFerrari Aperta-front.jpg" />
-          <div class="card-content">
-            <div class="logo">
-              <img src="assets/Ferrari-logo.png" />
-              Ferrari
-            </div>
-            <h> Ferrari LaFerrari Aperta </h>
-            <br />
-            <br />
-            <p>6,742,000 €</p>
-            <p style="text-align: right" ;>2016 | 0 Km</p>
-          </div>
-        </a>
-      </div>
-
-      <div class="card">
-        <a href="" style="text-decoration: none">
-          <img src="assets/Lamborghini Sian Roadster-front.jpg" />
-          <div class="card-content">
-            <div class="logo">
-              <img src="assets/Lamborghini-logo.png" />
-              Lamborghini
-            </div>
-            <h> Lamborghini Sian Roadster </h>
-            <br />
-            <br />
-            <p>4,305,385 €</p>
-            <p style="text-align: right" ;>2021 | 0 Km</p>
-          </div>
-        </a>
-      </div>
-
-      <div class="card">
-        <a href="" style="text-decoration: none">
-          <img src="assets/Mercedes-Benz AMG One-front.jpg" />
-          <div class="card-content">
-            <div class="logo">
-              <img src="assets/Mercedes-Benz-logo.png" />
-              Mercedes-Benz
-            </div>
-            <h> Mercedes-Benz AMG One </h>
-            <br />
-            <br />
-            <p>4,537,506 €</p>
-            <p style="text-align: right" ;>2023 | 0 Km</p>
-          </div>
-        </a>
-      </div>
-
-      <div class="card">
-        <a href="" style="text-decoration: none">
-          <img src="assets/Ferrari 812 Competizione-front.jpg" />
-          <div class="card-content">
-            <div class="logo">
-              <img src="assets/Ferrari-logo.png" />
-              Ferrari
-            </div>
-            <h> Ferrari 812 Competizione </h>
-            <br />
-            <br />
-            <p>1,516,456 €</p>
-            <p style="text-align: right" ;>2023 | 0 Km</p>
-          </div>
-        </a>
-      </div>
-
-      <div class="card">
-        <a href="" style="text-decoration: none">
-          <img src="assets/Rolls-Royce Wrath Black Badge-front.jpg" />
-          <div class="card-content">
-            <div class="logo">
-              <img src="assets/Rolls-Royce-logo.png" />
-              Rolls-Royce
-            </div>
-            <h> Rolls-Royce Wrath Black Badge </h>
-            <br />
-            <br />
-            <p>451,100 €</p>
-            <p style="text-align: right" ;>2022 | 0 Km</p>
-          </div>
-        </a>
-      </div>
-
-      <div class="card">
-        <a href="" style="text-decoration: none">
-          <img src="assets/Ferrari Daytona SP3-front.jpg" />
-          <div class="card-content">
-            <div class="logo">
-              <img src="assets/Ferrari-logo.png" />
-              Ferrari
-            </div>
-            <h> Ferrari Daytona SP3 </h>
-            <br />
-            <br />
-            <p>2,700,000 €</p>
-            <p style="text-align: right" ;>2023 | 0 Km</p>
-          </div>
-        </a>
-      </div>
+  <div class="slider-wrapper">
+    <div class="slider">
+      <img id="slide-1" src="assets/slide-1.jpg" alt="" />
+      <img id="slide-2" src="assets/slide-2.jpg" alt="" />
+      <img id="slide-3" src="assets/slide-3.jpg" alt="" />
+      <img id="slide-4" src="assets/slide-4.jpg" alt="" />
     </div>
-  </body>
+    <div class="slider-nav">
+      <a href=""></a>
+      <a href=""></a>
+      <a href=""></a>
+      <a href=""></a>
+    </div>
+  </div>
+</section>
+        
+    <div class="card-container">
+    
+        <div class='card'>
+        <a href='carInfo.php'  style='text-decoration: none;'>
+        <img src='assets/Ferrari LaFerrari Aperta-front.jpg'     >
+        <div class='card-content'>
+        <div class='logo'>
+        <img src='assets/Ferrari-logo.png'>
+        Ferrari </div>
+        <h > Ferrari LaFerrari Aperta </h>
+        <br>
+        <br>
+       <p>  6,742,000 € </p>
+        <p style='text-align: right'; > 2016 | 0 Km  </p>
+       
+       </div>
+       </a>
+       </div>
+       
+       
+        <div class='card'>
+        <a href='carInfo.php'  style='text-decoration: none;'>
+        <img src='assets/Lamborghini Sian Roadster-front.jpg'     >
+        <div class='card-content'>
+        <div class='logo'>
+        <img src='assets/Lamborghini-logo.png'>
+        Lamborghini </div>
+        <h > Lamborghini Sian Roadster </h>
+        <br>
+        <br>
+       <p>  4,305,385 € </p>
+        <p style='text-align: right'; > 2021 | 0 Km  </p>
+       
+       </div>
+       </a>
+       </div>
+       
+       
+        <div class='card'>
+        <a href='carInfo.php'  style='text-decoration: none;'>
+        <img src='assets/Mercedes-Benz AMG One-front.jpg'     >
+        <div class='card-content'>
+        <div class='logo'>
+        <img src='assets/Mercedes-Benz-logo.png'>
+        Mercedes-Benz </div>
+        <h > Mercedes-Benz AMG One </h>
+        <br>
+        <br>
+       <p>  4,537,506 € </p>
+        <p style='text-align: right'; > 2023 | 0 Km  </p>
+       
+       </div>
+       </a>
+       </div>
+       
+       
+        <div class='card'>
+        <a href='carInfo.php'  style='text-decoration: none;'>
+        <img src='assets/Ferrari 812 Competizione-front.jpg'     >
+        <div class='card-content'>
+        <div class='logo'>
+        <img src='assets/Ferrari-logo.png'>
+        Ferrari </div>
+        <h > Ferrari 812 Competizione </h>
+        <br>
+        <br>
+       <p>  1,516,456 € </p>
+        <p style='text-align: right'; > 2023 | 0 Km  </p>
+       
+       </div>
+       </a>
+       </div>
+       
+       
+        <div class='card'>
+        <a href='carInfo.php'  style='text-decoration: none;'>
+        <img src='assets/Rolls-Royce Wrath Black Badge-front.jpg'     >
+        <div class='card-content'>
+        <div class='logo'>
+        <img src='assets/Rolls-Royce-logo.png'>
+        Rolls-Royce </div>
+        <h > Rolls-Royce Wrath Black Badge </h>
+        <br>
+        <br>
+       <p>  451,100 € </p>
+        <p style='text-align: right'; > 2022 | 0 Km  </p>
+       
+       </div>
+       </a>
+       </div>
+       
+       
+        <div class='card'>
+        <a href='carInfo.php'  style='text-decoration: none;'>
+        <img src='assets/Ferrari Daytona SP3-front.jpg'     >
+        <div class='card-content'>
+        <div class='logo'>
+        <img src='assets/Ferrari-logo.png'>
+        Ferrari </div>
+        <h > Ferrari Daytona SP3 </h>
+        <br>
+        <br>
+       <p>  2,700,000 € </p>
+        <p style='text-align: right'; > 2023 | 0 Km  </p>
+       
+       </div>
+       </a>
+       </div>
+       
+       </div>
+
+
+</body>
+
+
 </html>

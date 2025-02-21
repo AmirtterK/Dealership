@@ -4,6 +4,12 @@ body {
   padding: 0;
   width: 100%;
 }
+.news-body {
+  background-color: #191919;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
 * {
   margin: 0px;
   padding: 0px;
@@ -75,8 +81,6 @@ body {
   width: 100%;
   height: 93vh;
   box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
-  /*
-  */
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   scrollbar-width: none;
@@ -84,6 +88,8 @@ body {
 }
 .slider img {
   flex: 1 0 100%;
+  height: 100%;
+  width: 100%;
   scroll-snap-align: start;
   object-fit: cover;
 }
@@ -129,6 +135,7 @@ body {
   height: 70px;
   width: 80px;
   overflow: hidden;
+  clip-path: inset(0px 0px 14px 0px);
 }
 .nav-bar li a:hover {
   color: rgb(165, 165, 165);
@@ -146,7 +153,6 @@ body {
 .nav-bar li a::after {
   content: "";
   position: absolute;
-
   background-color: red;
   width: 0;
   height: 1px;
@@ -252,4 +258,87 @@ body {
   max-width: 30%;
   max-height: 30%;
   animation: fadeOut 3s;
+}
+
+.news-section {
+  animation: section-fade linear both;
+  animation-timeline: view();
+  animation-range: entry 50% cover 50%;
+  margin-top: 100px;
+}
+.news-section section {
+  display: flex;
+  margin: 20px 60px;
+  margin-bottom: 100px;
+  gap: 50px;
+}
+.news-details {
+  margin-top: 20px;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.news-card {
+  max-width: 600px;
+  aspect-ratio: 1/0.7;
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+}
+.news-card:hover {
+  filter: brightness(0.8);
+}
+.news-card:hover::after {
+  opacity: 1;
+  inset: 20px;
+}
+.news-card:hover .news-card-details {
+  opacity: 1;
+  text-align: center;
+  color: white;
+}
+.news-card .image-container {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+.news-card .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 90%;
+  border-radius: inherit;
+  transition: 0.5 ease-in-out;
+}
+.news-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 2px solid white;
+  border-radius: inherit;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+.news-card-details {
+  width: 80%;
+  position: absolute;
+  text-align: center;
+  top: 80%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+@keyframes section-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+  0% {
+    opacity: 0;
+  }
 }

@@ -1,20 +1,18 @@
-body {
-  background-color: #191919;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-.news-body {
-  background-color: #191919;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+
+/* Amir */
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
   font-family: sans-serif;
+}
+
+body {
+  background-color: #191919;
+  margin: 0;
+  padding: 0;
 }
 
 .card-container {
@@ -203,61 +201,11 @@ body {
   }
 }
 
-.dropdown {
-  position: relative;
-}
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  background-color: #222;
-  list-style: none;
-  margin-top: 10px;
-  padding: 10px;
-  top: 100%;
-  left: 0;
-  min-width: 100px;
-  z-index: 10;
-}
-
-.dropdown-menu li {
-  margin: 5px 0;
-}
-
-.dropdown-menu a {
-  color: white;
-  padding: 3px;
-  display: block;
-}
-
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
-
-/* Maxim */
-
-@keyframes fadeOut {
-  to {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-
-#load {
-  position: fixed;
+.news-body {
+  background-color: #191919;
+  margin: 0;
+  padding: 0;
   width: 100%;
-  height: 100%;
-  background-color: #000;
-  z-index: 9999;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: fadeOut 1s ease-out 1s forwards;
-}
-
-#load img {
-  max-width: 30%;
-  max-height: 30%;
-  animation: fadeOut 3s;
 }
 
 .news-section {
@@ -342,3 +290,191 @@ body {
     opacity: 0;
   }
 }
+
+.reach-us {
+  background-color: #000;
+  width: 450px;
+  padding: 40px 0px 10px 50px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border-radius: 3%;
+  gap: 40px;
+  color: #fff;
+}
+.reach-us .footer-col ul li {
+  margin-bottom: 30px;
+}
+.reach-us .footer-col h3{
+  margin-bottom: 30px;
+}
+.map-container{
+  width: 100%;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Amir */
+
+/* ikram */
+.dropdown {
+  position: relative;
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #222;
+  list-style: none;
+  margin-top: 10px;
+  padding: 10px;
+  top: 100%;
+  left: 0;
+  min-width: 100px;
+  z-index: 10;
+}
+
+.dropdown-menu li {
+  margin: 5px 0;
+}
+
+.dropdown-menu a {
+  color: white;
+  padding: 3px;
+  display: block;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+/* ikram */
+
+/* Maxim */
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+#load {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeOut 1s ease-out 1s forwards;
+}
+
+#load img {
+  max-width: 30%;
+  max-height: 30%;
+  animation: fadeOut 3s;
+}
+/* Maxim */
+
+/* kenza */
+
+footer {
+  background-color: #000000;
+  color: #fff;
+  padding: 0 20px;
+  font-family: Arial, sans-serif;
+  margin-top: 150px;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 220px;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 3%;
+}
+
+.footer-logo {
+  max-width: 90px;
+  max-height: 90px;
+  margin-bottom: 10px;
+}
+
+.footer-col h4 {
+  font-size: 20px;
+  margin-top: 35px;
+  margin-bottom: 15px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.footer-col p {
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.6;
+}
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.social-links {
+  margin-top: 15px;
+}
+
+.social-links a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  background: #333;
+  color: #ffffff;
+  border-radius: 50%;
+  margin-right: 8px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  background: #ffffff;
+  color: #191919;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: #ddd;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+
+.footer-col ul li a:hover {
+  color: #eb1313;
+  transform: translateX(-3px) translateY(-5px);
+}
+
+/* kenza */

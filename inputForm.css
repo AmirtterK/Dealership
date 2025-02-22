@@ -26,7 +26,7 @@
     justify-content: center;
   }
   .nav-bar img {
-    height: 70px;
+    height: 65px;
     width: 80px;
   }
   .nav-bar li a:hover {
@@ -43,6 +43,8 @@
     text-decoration: none;
 }
 
+
+
 #formContainer{
     background-color: #1d1d1d;
     align-items: center;
@@ -51,32 +53,32 @@
     width: 100%;
     height: 93vh;
     
+    
 }
 
 #inputForm{
     background-color:rgb(22, 22, 22) ;
-    width: 30vw;
-    height: 48vh;
+    width: 30%;
+    height: 52%;
     display: flex;
-    top: -30px;
+    top: -2%;
     position: relative;
     color: #fff;
     justify-content: center;
     border-radius: 15px;
     box-shadow: 0px 0px 10px rgb(22, 22, 22);
-    
 }
 
 
 .formElement {
     width: 17vw;
+    height: 4.7vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 20px;
-    gap: 20px;
-    font-size: 20px;
-    
+    margin-bottom: 5%;
+    gap: 5%;
+    font-size: 105%;
 }
 
 .formElement input {
@@ -84,70 +86,50 @@
     background-color: #2e2e2e;
     border: none;
     color: #fff;
-    font-size: 17px;
-    width: 15px;
-    padding: 12px;
+    width: 3.5%;
+    height: 100%;
+    padding: 3.5%;
     border-radius: 15px;
+    font-size: 100%;
 }
-
-
 
 .formElement img {
-    width: 25px;
-    fill: #ffffff;
+    width: 9%;
 }
 
-
 .title{
-    font-size: 26px;
+    font-size: 170%;
     font-weight: 700;
     display: flex;
-    margin-top: 17px;
-    margin-left:  25px;
-    margin-right:  25px;
-    
-    
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 form select{
-    flex: 1;
     background-color: #2e2e2e;
     border: none;
     color: #fff;
-    font-size: 17px;
-    width: 70px;
-    padding: 10px;
+    font-size: 90%;
+    width: 47%;
+    height: 100%;
     border-radius: 15px;
-
-
 }
 
 #cvv {
-  margin-left: 45px;
-
-}
-
-#secondButton{
-  margin-left: 45px;
+  margin-left: 14%;
 }
 
 
-/* hadou styles ta3 two buttns */
-/* form button {
-  flex: 1;
-  font-size: 17px;
-  height: 40px;
-  border-radius: 15px;
-  border: none;
-} */
-
-/* hada style ta3 l boutouna twila */
 #bigButton{
-  margin-left: 45px;
+  height: 100%;
+  width: 86%;
+  margin-left: 14%;
   border-radius: 15px;
   border: none;
-  width: 78%;
-  height: 4vh;
   font-size: 18px;
-  
+}
+
+.expirationDate{
+  height: 100%;
+  width: 40%;
 }

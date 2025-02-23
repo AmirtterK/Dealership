@@ -58,7 +58,7 @@
 
 #inputForm{
     background-color:rgb(22, 22, 22) ;
-    width: 30%;
+    width: 28.5%;
     height: 52%;
     display: flex;
     top: -2%;
@@ -71,7 +71,7 @@
 
 
 .formElement {
-    width: 17vw;
+    width: 18vw;
     height: 4.7vh;
     display: flex;
     align-items: center;
@@ -79,6 +79,7 @@
     margin-bottom: 5%;
     gap: 5%;
     font-size: 105%;
+    
 }
 
 .formElement input {
@@ -101,8 +102,8 @@
     font-size: 170%;
     font-weight: 700;
     display: flex;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 4%;
+    margin-bottom: 6.5%;
 }
 
 form select{
@@ -131,5 +132,5 @@ form select{
 
 .expirationDate{
   height: 100%;
-  width: 40%;
+  width: 43%;
 }

@@ -229,7 +229,6 @@ html {
 }
 .news-card {
   max-width: 600px;
-  
   aspect-ratio: 1/0.7;
   border-radius: 8px;
   position: relative;
@@ -336,6 +335,8 @@ html {
   width: 28%;
   margin: 0 1%;
   background-color: rgb(33, 33, 33);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 .specification-box-detail {
@@ -346,13 +347,39 @@ html {
   font-size: 18px;
   padding: 20px;
   justify-content: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
-a .specification-box-detail {
+.price-box {
+  display: flex;
+  background-color: black;
+  height: 10%;
+  color: white;
+  font-size: 18px;
+  padding: 20px;
+  justify-content: center;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.buy-button {
+  display: flex;
+  background-color: black;
+  height: 10%;
+  color: white;
+  font-size: 18px;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  justify-content: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+a .buy-button {
   margin-top: 5%;
   transition: 0.3s;
 }
-a:hover .specification-box-detail {
+a:hover .buy-button {
   color: #eb1313;
 }
 .car-specs {
@@ -383,6 +410,7 @@ a:hover .specification-box-detail {
   height: 88%;
   margin-left: 1%;
   overflow: hidden;
+  border-radius: 8px;
 }
 .spec-wrapper {
   width: 100%;
@@ -460,7 +488,7 @@ a:hover .specification-box-detail {
   position: absolute;
   background-color: #222;
   list-style: none;
-  margin-top: 10px;
+  margin-top: 8px;
   padding: 10px;
   top: 100%;
   left: 0;
@@ -697,5 +725,5 @@ footer {
   color: #eb1313;
   transform: translateX(-3px) translateY(-5px);
 }
- 
+
 /* kenza */

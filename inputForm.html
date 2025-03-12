@@ -9,26 +9,28 @@
   </head>
   <body>
     <header>
-        <div class="nav-bar">
+      <div class="nav-bar">
+        <a href="index.html">
           <img src="assets/logo.jpg" alt="" />
-          <nav>
-            <ul>
-              <li class="dropdown">
-                <a href="index.html">CARS</a>
-                <ul class="dropdown-menu">
-                  <li><a href="">Hyper</a></li>
-                  <li><a href="">Super</a></li>
-                  <li><a href="">Classic</a></li>
-                  <li><a href="">Touring</a></li>
-                </ul>
-              </li>
-              <li><a href="index.html">RACE CARS</a></li>
-              <li><a href="news.html">NEWS</a></li>
-              <li><a href="contact.html">CONTACT</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
+        </a>
+        <nav>
+          <ul>
+            <li class="dropdown">
+              <a href="index.html">CARS</a>
+              <ul class="dropdown-menu">
+                <li><a href="">Hyper</a></li>
+                <li><a href="">Super</a></li>
+                <li><a href="">Classic</a></li>
+                <li><a href="">Touring</a></li>
+              </ul>
+            </li>
+            <li><a href="race_cars.html">RACE CARS</a></li>
+            <li><a href="news.html">NEWS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
     <div id="formContainer">
       <div id="inputForm">

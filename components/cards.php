@@ -9,10 +9,10 @@
         "
         <div class='card'>
         <a href='carInfo.php?id={$car->id}'>
-        <img src='assets/cars/$car->brand $car->model-front.webp'     >
+        <img src='../assets/cars/$car->brand $car->model-front.webp'     >
         <div class='card-content'>
         <div class='logo'>
-        <img src='assets/logos/$car->brand-logo.png'>
+        <img src='../assets/logos/$car->brand-logo.png'>
         $car->brand </div>
         <h > $car->brand $car->model</h>
         <br>

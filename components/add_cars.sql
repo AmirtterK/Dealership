@@ -27,3 +27,4 @@ height float,
 wheelBase float,
 description text
 );
+TRUNCATE TABLE availableCars;

@@ -3,7 +3,7 @@
 $db_server = "localhost";
 $db_user = "root";
 $db_pass = "";
-$db_name = "cars";
+$db_name = "dealership";
 $conn = "";
 
 try {

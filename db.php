@@ -22,7 +22,7 @@ $sql = "SELECT * FROM availableCars";
 $cars = [];
 $response = mysqli_query($conn, $sql);
 foreach ($response as $car) {
-    $cars[] = new Car($car["brand"], $car["model"], $car["body"], $car["exteriorColor"], $car["interiorColor"] , $car["driveType"], $car["transmission"], $car["price"],$car["buildYear"], $car["milage"], $car["topSpeed"], $car["acceleration"], $car["liters"], $car["shape"], $car["cylinders"], $car["aspiration"], $car["eMotor"], $car["hp"], $car["torque"], $car["displacement"], $car["weight"], $car["width"], $car["length"], $car["height"], $car["wheelBase"], $car["description"]        );
+    $cars[] = new Car($car["id"],$car["brand"], $car["model"], $car["body"], $car["exteriorColor"], $car["interiorColor"] , $car["driveType"], $car["transmission"], $car["price"],$car["buildYear"], $car["milage"], $car["topSpeed"], $car["acceleration"], $car["liters"], $car["shape"], $car["cylinders"], $car["aspiration"], $car["eMotor"], $car["hp"], $car["torque"], $car["displacement"], $car["weight"], $car["width"], $car["length"], $car["height"], $car["wheelBase"], $car["description"]        );
 }
 
 

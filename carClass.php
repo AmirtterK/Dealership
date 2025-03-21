@@ -1,6 +1,7 @@
 <?php
 class Car
 {
+    var $id;
     var $brand;
     var $model;
     var $body;
@@ -28,6 +29,7 @@ class Car
     var $wheelBase;
     var $description;
     function __construct(
+        $id,
         $brand,
         $model,
         $body,
@@ -55,6 +57,7 @@ class Car
         $wheelBase,
         $description,
     ) {
+        $this->id=$id;
         $this->brand = $brand;
         $this->model = $model;
         $this->body = $body;

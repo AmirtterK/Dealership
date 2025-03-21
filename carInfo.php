@@ -4,7 +4,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>2016 ferrai Laferrai Aperta | MarciaUno</title>
+  <?php
+  session_start();
+  include "carClass.php";
+
+  if (isset($_GET['id']) && isset($_SESSION['cars'][$_GET['id']])) {
+    $car = unserialize($_SESSION['cars'][$_GET['id']]);
+  }
+  echo "<title>$car->buildYear $car->brand $car->model | MarciaUno</title>"
+
+  ?>
+
   <link rel="stylesheet" href="index.css" type="text/css" />
   <link rel="icon" href="assets/logo.jpg" type="image/x-icon" />
 </head>
@@ -17,13 +27,19 @@
   <?php include "header.html" ?>
 
   <div class="model-name">
-    <p>Ferrari LaFerrari Aperta</p>
+    <?php
+    echo "<p>$car->brand $car->model</p>"
+
+    ?>
   </div>
   <div class="info-row">
     <div class="spec-image-container">
       <div class="spec-wrapper">
-        <img src="assets/cars/Ferrari LaFerrari Aperta-front.webp" />
-        <img src="assets/cars/Ferrari Laferrari Aperta-back.webp" />
+        <?php
+        echo "<img src='assets/cars/$car->brand $car->model-front.webp' />";
+        echo "<img src='assets/cars/$car->brand $car->model-back.webp' />"
+        ?>
+
       </div>
     </div>
     <div class="model-specifications-details">
@@ -32,15 +48,25 @@
       </div>
       <dl class="car-specs">
         <dt>YEAR</dt>
-        <dd>2016</dd>
+        <?php
+        echo "<dd>$car->buildYear</dd>"
+        ?>
         <dt>MILEAGE</dt>
-        <dd>0 km</dd>
+        <?php
+        echo "<dd>$car->milage Km</dd>"
+        ?>
         <dt>EXTERIOR COLOR</dt>
-        <dd>Nero Daytona</dd>
+        <?php
+        echo "<dd>$car->exteriorColor</dd>"
+        ?>
         <dt>INTERIOR COLOR</dt>
-        <dd>Black</dd>
+        <?php
+        echo "<dd>$car->interiorColor</dd>"
+        ?>
         <dt>DRIVE TYPE</dt>
-        <dd>Rear Wheel Drive</dd>
+        <?php
+        echo "<dd>$car->driveType</dd>"
+        ?>
         <dt>ENGINE</dt>
         <dd>6.3L V12 Naturally Aspirated Engine + 1 eMotor</dd>
         <dt>BODY TYPE</dt>

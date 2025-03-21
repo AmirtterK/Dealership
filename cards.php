@@ -3,8 +3,6 @@
     foreach ($cars as $car) {
         $price = number_format($car->price);
 
-
-
         echo
         "
         <div class='card'>
@@ -18,7 +16,7 @@
         <br>
         <br>
        <p>  $price € </p>
-        <p style='text-align: right'; > $car->year | $car->milage Km  </p>
+        <p style='text-align: right'; > $car->buildYear | $car->milage Km  </p>
        
        </div>
        </a>

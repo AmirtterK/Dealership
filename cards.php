@@ -7,7 +7,7 @@
         "
         <div class='card'>
         <a href='carInfo.php'  style='text-decoration: none;'>
-        <img src='assets/$car->brand $car->model-front.jpg'     >
+        <img src='assets/cars/$car->brand $car->model-front.webp'     >
         <div class='card-content'>
         <div class='logo'>
         <img src='assets/$car->brand-logo.png'>

@@ -30,6 +30,10 @@
       $brand = "Maybach";
     else
       $brand = $car->brand;
+    if ($car->model === 'AMG F1 W04')
+      $name = 'AMG F1 W04 #44';
+    else
+      $name = $car->model;
 
     echo
     "
@@ -37,7 +41,7 @@
     <a href='index.php?class={$car->brand}'>
     <img src='../assets/logos/$brand-logo.png' alt='$brand-logo'></div>
     </a>
-    <p>$car->brand $car->model</p>
+    <p>$car->brand $name</p>
      
      "
 

@@ -9,7 +9,7 @@
                 break;
             case 'sold':
                 if (!$car->sold)
-                    continue 2;                   
+                    continue 2;
                 break;
             case 'race':
                 if (!($car->topSpeed >= 300 && (str_contains($car->transmission, "Sequential") || str_contains($car->model, "RS") || str_contains($car->model, "AMG") || str_contains($car->model, "EVO"))))
@@ -39,10 +39,10 @@
                 break;
         }
 
-        $price = number_format($car->price)." € ";
+        $price = number_format($car->price) . " € ";
         $milage = number_format($car->milage);
-        if($car->sold){
-            $price="Sold";
+        if ($car->sold) {
+            $price = "Sold";
         }
         if (str_contains($car->model, "Maybach")) {
             $logo = "Maybach";
@@ -51,6 +51,10 @@
             $logo = $car->brand;
             $brand = $car->brand;
         }
+        if ($car->model === 'AMG F1 W04')
+            $name = 'AMG F1 W04 #44';
+        else
+            $name = $car->model;
         $_SESSION['cars'][$car->id] = serialize($car);
         echo
         "
@@ -61,7 +65,7 @@
         <div class='logo'>
         <img src='../assets/logos/$logo-logo.png '>
         $brand </div>
-        <h > $car->brand $car->model</h>
+        <h > $car->brand $name</h>
         <br>
         <br>
         <p>  $price</p>
